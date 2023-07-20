@@ -47,7 +47,6 @@ public class ResortAdapter extends RecyclerView.Adapter<ResortAdapter.MyHolder> 
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                    Intent intent=new Intent(v.getContext(),Aalankritha_Resort.class);
                     Intent intent=new Intent(v.getContext(),HotelDetails.class);
 
                     intent.putExtra("name",arrayList.get(currentPosition).getHName());
