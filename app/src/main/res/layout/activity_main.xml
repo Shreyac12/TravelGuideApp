@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#1A4549">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="265dp"
+            android:layout_marginBottom="11dp"
+            android:fontFamily="@font/rubik"
+            android:text="Find your"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toStartOf="@+id/profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="222dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Next Destination"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="78dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/profile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/constraintLayout"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="5dp"
+            android:background="#FFFFFF"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+
+            android:paddingLeft="6dp"
+            android:rowCount="5">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/places"
+                android:layout_width="195dp"
+                android:layout_height="130dp"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/place" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#88000000"
+                    android:fontFamily="@font/rubik"
+                    android:gravity="center"
+                    android:text="All Places"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/resorts"
+                android:layout_width="195dp"
+                android:layout_height="130dp"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/resort" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#88000000"
+                    android:fontFamily="@font/rubik"
+                    android:gravity="center"
+                    android:text="Resorts"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/heritage"
+                android:layout_width="195dp"
+                android:layout_height="130dp"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/heritage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#88000000"
+                    android:fontFamily="@font/rubik"
+                    android:gravity="center"
+                    android:text="Culture and Heritage"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/beach"
+                android:layout_width="195dp"
+                android:layout_height="130dp"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/beach2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#88000000"
+                    android:fontFamily="@font/rubik"
+                    android:gravity="center"
+                    android:text="Water Bodies"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/restaurant"
+                android:layout_width="195dp"
+                android:layout_height="130dp"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/restaurants" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#88000000"
+                    android:fontFamily="@font/rubik"
+                    android:gravity="center"
+                    android:text="Restaurants"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/towns"
+                android:layout_width="195dp"
+                android:layout_height="130dp"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/street" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#88000000"
+                    android:fontFamily="@font/rubik"
+                    android:gravity="center"
+                    android:text="Towns and Cities"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/museums"
+                android:layout_width="195dp"
+                android:layout_height="130dp"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/museum" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#88000000"
+                    android:fontFamily="@font/rubik"
+                    android:gravity="center"
+                    android:text="Museum"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gallery"
+                android:layout_width="195dp"
+                android:layout_height="130dp"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="7dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gallery" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#88000000"
+                    android:fontFamily="@font/rubik"
+                    android:gravity="center"
+                    android:text="Gallery"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+    </ScrollView>
+</RelativeLayout>

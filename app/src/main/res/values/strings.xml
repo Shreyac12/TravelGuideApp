@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TravelGuideApp</string>
+    <string name="address_text"> <b>Address:</b>Thumkunta Village, Shamirpet, Secunderabad, Telangana 500078</string>
+    <string name="time"><b>Hours:</b>Open 24 hours
+</string>
+    <string name="phone"> <b>Phone:</b>+91 9010606111</string>
+    <string name="architects"> <b>Architects:</b> Pratap Singh of Jaipur, Lal Chand Ustad</string>
+    <string name="Arcstyle">  <b>Architectural styles:</b> Mughal architecture, Rajput architecture</string>
+    <string name="floor"> <b>Floors:</b> 5 </string>
+    <string name="height"><b>Height:</b> 15 m</string>
+</resources>

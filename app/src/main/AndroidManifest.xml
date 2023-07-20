@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TravelGuideApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".Details"
+            android:exported="false" />
+        <activity
+            android:name=".Gallery"
+            android:exported="false" />
+        <activity
+            android:name=".Museum"
+            android:exported="false" />
+        <activity
+            android:name=".Cities"
+            android:exported="false" />
+        <activity
+            android:name=".Restaurants"
+            android:exported="false" />
+        <activity
+            android:name=".Beach"
+            android:exported="false" />
+        <activity
+            android:name=".Heritage"
+            android:exported="false" />
+        <activity
+            android:name=".Map"
+            android:exported="false" />
+        <activity
+            android:name=".Book"
+            android:exported="false" />
+        <activity
+            android:name=".BookingHistory"
+            android:exported="false" />
+        <activity
+            android:name=".HotelDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Aalankritha_Resort"
+            android:exported="false" />
+        <activity
+            android:name=".Resorts"
+            android:exported="false" />
+        <activity
+            android:name=".Places"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCYzfww2_XqWXvr02Pt_XB4SaalCZ-1XXE" />
+    </application>
+
+</manifest>
